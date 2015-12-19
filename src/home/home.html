@@ -1,0 +1,50 @@
+<div>
+  <div class="panel-group">
+    <div class="panel-heading">
+      <a class="btn btn-primary btn-lg" style="float: right" role="button" (click)="logout()">Logout</a>
+    </div>
+  </div>
+  <div class="panel-group" id="accordion" style="margin-top: 45px;">
+    <div class="panel panel-default">
+      <div class="panel-heading" (click)="toggleInClass(1)">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="javascript:void(0)">Welcome to the Adda52</a>
+        </h4>
+      </div>
+      <div class="panel-collapse collapse">
+        <div class="panel-body">
+          <secrets-directive></secrets-directive>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" (click)="toggleInClass(2)">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="javascript:void(0)">View inside View Example</a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+            <a [router-link]="['/Home/TestMe']" class="btn btn-default">Game1</a>
+            <a [router-link]="['/Home/AnotherTest']" class="btn btn-default">Game2</a>
+            <a [router-link]="['/Home/LastTest']" class="btn btn-default">Game3</a>
+          </div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" (click)="toggleInClass(3)">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="javascript:void(0)">Directive Example</a>
+        </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse">
+        <div class="panel-body">
+          <button-directive></button-directive>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
