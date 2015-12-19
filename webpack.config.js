@@ -114,7 +114,7 @@ module.exports = {
 };
 
 function getBanner() {
-  return 'This is a sample that shows how to add authentication to an Angular 2 (ng2) app by @auth0';
+  return 'A demo project angular2 beta that had covered all functionality(e.g. routing, nested routing, directives, pipe, dependency injection etc) in easy understanding way';
 }
 
 function root(args) {
