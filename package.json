@@ -1,7 +1,7 @@
 {
-  "name": "ang2Gauss",
+  "name": "app4pc",
   "version": "1.0.0",
-  "description": "This is a sample that shows how to add authentication to an Angular 2 (ng2) app",
+  "description": "A demo project angular2 beta that had covered all functionality(e.g. routing, nested routing, directives, pipe, dependency injection etc) in easy understanding way",
   "main": "",
   "scripts": {
     "server": "cd backend && npm i && node server.js",
@@ -10,9 +10,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/auth0/ang2Gauss/issues"
-  },
   "dependencies": {
     "angular2": "2.0.0-alpha.44",
     "raw-loader": "0.5.1",
