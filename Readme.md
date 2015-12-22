@@ -1,5 +1,5 @@
 # Angular 2:
-A demo project angular2 beta that had covered all functionality(e.g. routing, nested routing, directives, pipe, dependency injection etc) in easy understanding way
+A demo project angular2 beta that had covered all functionality(e.g. routing, nested routing, Directives, custom & inbuilt pipe, dependency injection etc) in easy understanding way
 
 # How to run
 
@@ -15,3 +15,9 @@ run "npm start"
 
 step4:
 open "localhost:3000" in browser
+
+
+# Technologies Postmortem:
+
+find The doc file "Technologies Postmortem.doc" in the project
+
