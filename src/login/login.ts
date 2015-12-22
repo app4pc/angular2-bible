@@ -35,7 +35,7 @@ export class Login {
     .then((response:any) => {
       localStorage.setItem('jwt', response.id_token);
       console.log("came here",event,username,password);
-      this.router.parent.navigateByUrl('/home/Test');
+      this.router.parent.navigateByUrl('/home/game2');
     })
     .catch((error) => {
       //alert(error.message);

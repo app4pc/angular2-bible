@@ -15,8 +15,10 @@ let template = require('./game3.html');
     styles: [styles]
 })
 
-export class LastTest {
+export class Game3 {
+    constructor() {
 
+    }
 }
 
 

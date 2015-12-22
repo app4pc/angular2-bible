@@ -11,10 +11,10 @@ import {Location, RouteConfig, RouterLink, Router} from 'angular2/router';
   selector: 'another-test'
 })
 @View({
-  template : '<div class="home jumbotron centered"><h2>Another Test</h2></div>'
+  template : '<div class="home jumbotron centered"><h2>Game-2 will be here</h2></div>'
 })
 
-export class AnotherTest {
+export class Game2 {
 
 }
 

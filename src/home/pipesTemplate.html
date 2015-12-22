@@ -1,0 +1,12 @@
+<h3>Dates pipe</h3>
+<p>{{date | date:'mediumDate'}}</p>
+<p>{{date | date:'yMMMMd'}}</p>
+<p>{{date | date:'shortTime'}}</p>
+
+<h3>Decimals/Percentages</h3>
+<p>{{grade | percent:'.2'}}</p>
+<p>{{rating | number:'2.1-2'}}</p>
+
+<h3>Custom Pipes - Convert Temperature</h3>
+<p>Fahrenheit: {{temperature + ' F'}}</p>
+<p>Celsius: {{temperature | tempConvert:'celsius':1}}</p>

@@ -8,11 +8,15 @@ import {Component, View, CORE_DIRECTIVES} from 'angular2/angular2';
 import {Location, RouteConfig, RouterLink, Router} from 'angular2/router';
 
 @Component({
-  selector: 'button-directive'
+  selector: 'test-me'
 })
 @View({
-  template : "<button>Button Directive</button>"
+  template : '<div class="home jumbotron centered"><h3>Game-1 will be here</h3></div>'
 })
 
-export class ButttonDirective {
+export class Game1 {
+
 }
+
+
+
