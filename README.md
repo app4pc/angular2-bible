@@ -13,7 +13,7 @@ This project setup uses following tech-set:
 
 Clone this repository as well as [the server](https://github.com/app4pc/angular2-bible.git) for this example.
 
-Then, run `npm install` on this project and run `npm start` to start the app. Then just navigate to [http://localhost:3000](http://localhost:3000) :boom:
+Then, run `npm install` on this project and run `npm start` to start the app. Then just navigate to [http://localhost:8080](http://localhost:8080) :boom:
 Use `npm run server` to run API server.
 
 ## Building Project

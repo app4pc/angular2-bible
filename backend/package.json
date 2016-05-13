@@ -1,0 +1,21 @@
+{
+  "name": "angular2-latest-basic-seed",
+  "version": "0.0.0",
+  "description": "A  basic Angular2 latest release RC1 (2.0.0-rc.1) project with authentication (login / logout) works as seed project",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mobz/elasticsearch-head.git"
+  },
+  "author": "Akhilesh Kumar <akhileshcoder@gmail.com>",
+  "keywords": [
+    "jwt","auth0","Angular2","authentication","login","logout","basic","seed","2.0.0-rc.1"
+  ],
+  "homepage": "https://github.com/auth0/in-memory-todo",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "express-jwt": "^0.3.2"
+  }
+}
