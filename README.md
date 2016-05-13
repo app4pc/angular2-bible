@@ -11,7 +11,7 @@ This project setup uses following tech-set:
 
 ## Running it
 
-Clone this repository as well as [the server](http://code.edgenetworks.in/akhilesh.kumar/genpact_setup_src) for this example.
+Clone this repository as well as [the server](https://github.com/app4pc/angular2-bible.git) for this example.
 
 Then, run `npm install` on this project and run `npm start` to start the app. Then just navigate to [http://localhost:3000](http://localhost:3000) :boom:
 Use `npm run server` to run API server.
