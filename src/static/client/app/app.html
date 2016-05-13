@@ -1,0 +1,118 @@
+<input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+<label for="drawer-toggle" id="drawer-toggle-label"></label>
+<header class="hdd-zin" style="padding-left:50px">
+  <div class="pull-left">
+    <div class="my-font-logo">
+      <span>app</span>
+      <span>4</span>
+      <span>pc</span>
+    </div>
+  </div>
+  <div *ngIf="isLogedIn" class="btn btn-default pull-right" style="font-size: 15px;cursor: pointer" (click)="logout()">
+    <span class="title">Log Out <i class="fa fa-sign-out"></i></span>
+  </div>
+</header>
+<nav id="drawer">
+  <ul class="list-group" style="margin-bottom: 0">
+    <li class="list-group-item start" style="">
+      <a href="/#">
+        <div class="displayOnMinScr my-font-logo-sm">
+          <span>a</span>
+          <span>4</span>
+          <span>p</span>
+        </div>
+        <div class="hideOnMinScr my-font-logo">
+          <span>app</span>
+          <span>4</span>
+          <span>pc</span>
+        </div>
+        <div class="logo-tag-l">
+          <div class="logo-icon-r bottom-to-top">
+            <i class="fa fa-mobile"></i>
+            <i class="fa fa-spin fa-exchange"></i>
+            <i class="fa fa-desktop"></i>
+          </div>
+          <div class="logo-tag-l-ine logo-default logo-default-wealthpack-logo">
+            <div id="fountainTextG">
+              <div id="fountainTextG_1" class="fountainTextG">
+                P</div>
+              <div id="fountainTextG_2" class="fountainTextG">
+                h</div>
+              <div id="fountainTextG_3" class="fountainTextG">
+                o</div>
+              <div id="fountainTextG_4" class="fountainTextG">
+                n</div>
+              <div id="fountainTextG_5" class="fountainTextG">
+                e</div>
+              <div id="fountainTextG_6" class="fountainTextG">
+                &nbsp;
+              </div>
+              <div id="fountainTextG_7" class="fountainTextG">
+                o</div>
+              <div id="fountainTextG_8" class="fountainTextG">
+                n</div>
+              <div id="fountainTextG_9" class="fountainTextG">
+                &nbsp;
+              </div>
+              <div id="fountainTextG_10" class="fountainTextG">
+                P</div>
+              <div id="fountainTextG_11" class="fountainTextG">
+                C</div>
+              <div></div>
+              <div id="fountainTextG_12" class="fountainTextG">
+                P</div>
+              <div id="fountainTextG_13" class="fountainTextG">
+                C</div>
+              <div id="fountainTextG_14" class="fountainTextG">
+                &nbsp;
+              </div>
+              <div id="fountainTextG_15" class="fountainTextG">
+                o</div>
+              <div id="fountainTextG_16" class="fountainTextG">
+                n</div>
+              <div id="fountainTextG_17" class="fountainTextG">
+                &nbsp;
+              </div>
+              <div id="fountainTextG_18" class="fountainTextG">
+                P</div>
+              <div id="fountainTextG_19" class="fountainTextG">
+                h</div>
+              <div id="fountainTextG_20" class="fountainTextG">
+                o</div>
+              <div id="fountainTextG_21" class="fountainTextG">
+                n</div>
+              <div id="fountainTextG_22" class="fountainTextG">
+                e</div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li class="list-group-item bg-transparent-ch">
+      <a href="jascript:void(0)">
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search"></i></span>
+          <input type="text" class="form-control" placeholder="search" aria-describedby="basic-addon1">
+        </div>
+      </a>
+    </li>
+    <li class="list-group-item {{i==0?'active':''}}" *ngFor="let valm of lstItem;let i=index;">
+      <a href="/{{valm[2]}}">
+        <i class="fa {{valm[1]}}"></i>
+        <span class="title">{{valm[0]}}</span>
+      </a>
+      <span class="selected"></span>
+    </li>
+    <li class="list-group-item">
+      <a href="/#">
+        <i class="fa fa-user-secret"></i>
+        <span class="title">Akhilesh Kumar <i class="fa fa-chevron-down"></i></span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<div id="page-content" style="">
+  <div class="container-fluid">
+    <router-outlet></router-outlet>
+  </div>
+</div>
