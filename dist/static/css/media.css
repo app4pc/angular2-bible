@@ -1,0 +1,90 @@
+@media print {
+  body {
+    background-color: #fff!important
+  }
+  .hidden-print,
+  .page-bar,
+  .page-footer,
+  .page-sidebar-wrapper,
+  .theme-panel {
+    display: none
+  }
+  .no-page-break {
+    page-break-after: avoid
+  }
+  .page-container {
+    margin: 0!important;
+    padding: 0!important
+  }
+  .page-content {
+    min-height: 300px!important;
+    padding: 0 20px 20px!important;
+    margin: 0!important
+  }
+  .page-content>.portlet,
+  .page-content>.portlet>.portlet-body {
+    padding: 0;
+    margin: 0
+  }
+}
+@media (min-width: 1800px){
+
+}
+@media (max-width: 1800px){
+
+}
+@media (max-width: 1200px){
+
+}
+@media (max-width: 992px){
+
+}
+@media (max-width: 768px){
+
+}
+@media (max-width: 480px){
+  .darktheme-a4p .uprightPn i {
+    font-size: 14px;
+  }
+  .uprightPn > li:last-child > a {
+    width: 38px;
+  }
+  .sec-ico-cent {
+    font-size: 9px!important;
+    top: 13px;
+    left: 16px;
+  }
+  .app-container {
+    height: calc(100% - 78px);
+  }
+}
+@media (max-width: 360px){
+  .uprightPn {
+    width: 109%;
+  }
+}
+@media (max-width: 320px){
+
+}
+@media (min-width: 320px) {
+
+}
+
+@media (max-width: 1800px) and (min-width: 1200px){
+
+}
+@media (max-width: 1200px) and (min-width: 992px){
+
+}
+@media (max-width: 992px) and (min-width: 768px){
+
+}
+@media (max-width: 768px) and (min-width: 480px){
+
+}
+@media (max-width: 480px) and (min-width: 360px){
+
+}
+@media (max-width: 360px) and (min-width: 320px){
+
+}
