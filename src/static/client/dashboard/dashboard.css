@@ -1,0 +1,15 @@
+.signup {
+  width: 40%;
+}
+.left-select{
+  padding: 10px;
+  height: 100%;
+}
+.left-select>.select2{
+  margin: 10px 5px!important;
+  padding: 10px!important;
+}
+.left-select .select2-container {
+  margin-top: 10px!important;
+}
+
