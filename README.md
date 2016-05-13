@@ -2,10 +2,12 @@
 
 
 ## This project setup uses following tech-set:
+
 * Webpack: for transplation and as a task runner
 * TSD & TSC to write code in ECMAScript-6 standards.
 * TS-Lint for de-bugging,code-optimisation and standardisation.
 * Angular 2 with latest release RC1 ("2.0.0-rc.1")
+* jQuery typescript for some functionality
 
 
 ## Running it
