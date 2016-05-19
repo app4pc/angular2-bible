@@ -1,16 +1,15 @@
 import { Component, AfterViewInit, } from '@angular/core';
-import { Router, RouterLink } from '@angular/router-deprecated';
+import { Router } from '@angular/router';
 import { CORE_DIRECTIVES, FORM_DIRECTIVES } from '@angular/common';
 import { Http, Headers } from '@angular/http';
 import { contentHeaders } from '../common/headers';
 declare var jQuery:JQueryStatic;
 declare var logInOpt:any;
+declare var encrptIt:any;
 let template = require('./login.html');
-let style = require('./login.css');
 @Component({
     selector: 'login',
-    directives: [RouterLink, CORE_DIRECTIVES, FORM_DIRECTIVES ],
-    style: style,
+    directives: [CORE_DIRECTIVES, FORM_DIRECTIVES ],
     template: template
 })
 
@@ -20,7 +19,7 @@ export class Login implements AfterViewInit{
   constructor(public router: Router, public http: Http) {
     jQuery(".lodngScr").addClass("loaded");
     if(this.isLogedIn){
-      this.router.parent.navigateByUrl('/dashboard');
+      this.router.navigateByUrl('/dashboard');
     }
   }
   ngAfterViewInit() {
@@ -40,18 +39,20 @@ export class Login implements AfterViewInit{
     this.http.post('/api/login', body)
       .subscribe(
         response => {
-          let data=response.json();
-          console.log("response",data);
-          localStorage.setItem('X-Auth-Token',data.token);
-          localStorage.setItem('username',data.username);
-          localStorage.setItem('user_type',data['user_type']);
-          localStorage.setItem('name', data.name);
-          localStorage.setItem('email', data.email);
-          localStorage.setItem('clientname', data.clientname);
-          localStorage.setItem('algo_access', data.algo_access);
-          localStorage.setItem('jwt', data.token);
-          localStorage.setItem('loggedInAt', ""+((new Date()).getTime()));
-          this.router.parent.navigateByUrl('/dashboard');
+            let data=response.json();
+            console.log("datadata",data);
+            localStorage.setItem('X-Auth-Token',data.token);
+            localStorage.setItem('username',encrptIt(data.username));
+            localStorage.setItem('user_type',encrptIt(data['user_type']));
+            localStorage.setItem('user_role',encrptIt(data['user_role']));
+            localStorage.setItem('name', encrptIt(data.name));
+            localStorage.setItem('email', encrptIt(data.email));
+            localStorage.setItem('clientname', encrptIt(data.clientname));
+            localStorage.setItem('algo_access', encrptIt(data.algo_access));
+            localStorage.setItem('jwt', data.token);
+            localStorage.setItem('loggedInAt', ""+((new Date()).getTime()));
+            jQuery(".lodngChrt").removeClass("loaded");
+            this.router.navigateByUrl('/dashboard');
         },
         error => {
           console.log("error",error.text());
@@ -121,7 +122,7 @@ export class Login implements AfterViewInit{
               localStorage.setItem('algo_access', data.algo_access);
               localStorage.setItem('jwt', data.token);
               localStorage.setItem('loggedInAt', ""+((new Date()).getTime()));
-              this.router.parent.navigateByUrl('/dashboard');
+              this.router.navigateByUrl('/dashboard');
           },
           error => {
               console.log("error",error.text());

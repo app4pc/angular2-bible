@@ -1,0 +1,30 @@
+<style>
+  .nv-tab{
+    border: 1px solid rgb(136, 136, 136);
+    text-transform: capitalize;
+    background: transparent;
+    width: 25%
+  }
+  .btn-group>.btn.btn-default.router-link-active{
+    color: rgb(255, 255, 255)!important;
+    background: rgba(26, 86, 78, 0.72)!important;
+  }
+  #page-content{
+    overflow-y: hidden;
+  }
+  .list-group-item.active, .list-group-item:hover, .btn-default.active {
+    color: #fff!important;
+  }
+</style>
+
+<div class="nav-tabs3" style="margin-top: -20px;height: 100%;">
+  <ul class="nav nav-tabs">
+    <li class="Admin AddUsrCat" style="margin-left: 10%;"><a [routerLink]="['/admin/addUsrCat']" style="font-weight: 700">Add User Category</a></li>
+    <li class="Admin AllUsr"><a [routerLink]="['/admin/allUsr']" style="font-weight: 700">All User Category</a></li>
+  </ul>
+  <div class="tab-content" style="padding-top: 10px;height: 100%;">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+

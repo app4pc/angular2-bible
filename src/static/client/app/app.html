@@ -1,6 +1,6 @@
 <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
 <label for="drawer-toggle" id="drawer-toggle-label"></label>
-<header class="hdd-zin" style="padding-left:50px">
+<header class="hdd-zin" style="padding-left:50px;visibility: hidden">
   <div class="pull-left">
     <div class="my-font-logo">
       <span>app</span>
@@ -15,7 +15,7 @@
 <nav id="drawer">
   <ul class="list-group" style="margin-bottom: 0">
     <li class="list-group-item start" style="">
-      <a href="/#">
+      <a href="javascript:void(0)">
         <div class="displayOnMinScr my-font-logo-sm">
           <span>a</span>
           <span>4</span>
@@ -89,22 +89,22 @@
       </a>
     </li>
     <li class="list-group-item bg-transparent-ch">
-      <a href="jascript:void(0)">
+      <a href="javascript:void(0)">
         <div class="input-group">
           <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search"></i></span>
           <input type="text" class="form-control" placeholder="search" aria-describedby="basic-addon1">
         </div>
       </a>
     </li>
-    <li class="list-group-item {{i==0?'active':''}}" *ngFor="let valm of lstItem;let i=index;">
-      <a href="/{{valm[2]}}">
-        <i class="fa {{valm[1]}}"></i>
+    <li *ngFor="let valm of lstItem;let i=index;" [ngClass]="['list-group-item',i==0?'active':'']">
+      <a [routerLink]="[valm[2]]">
+        <i [ngClass]="['fa',valm[1]]"></i>
         <span class="title">{{valm[0]}}</span>
       </a>
       <span class="selected"></span>
     </li>
     <li class="list-group-item">
-      <a href="/#">
+      <a href="javascript:void(0)">
         <i class="fa fa-user-secret"></i>
         <span class="title">Akhilesh Kumar <i class="fa fa-chevron-down"></i></span>
       </a>

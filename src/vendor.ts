@@ -2,7 +2,7 @@
 import '@angular/platform-browser';
 import '@angular/platform-browser-dynamic';
 import '@angular/core';
-import '@angular/router-deprecated';
+import '@angular/router';
 import '@angular/http';
 
 // RxJS

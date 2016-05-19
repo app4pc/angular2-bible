@@ -11,10 +11,10 @@
   "files": [
     "typings/tsd.d.ts",
     "src/static/client/app/app.ts",
-    "src/static/client/app/LoggedInOutlet.ts",
     "src/static/client/login/login.ts",
     "src/static/client/dashboard/dashboard.ts",
-    "src/static/client/common/headers.ts"
+    "src/static/client/common/headers.ts",
+    "src/static/client/admin/admin.ts"
   ],
   "filesGlob": [
     "./src/**/*.ts",

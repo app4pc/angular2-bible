@@ -1,8 +1,8 @@
 import {enableProdMode, provide} from "@angular/core";
-import { FORM_PROVIDERS } from '@angular/common';
+import { FORM_PROVIDERS ,APP_BASE_HREF} from '@angular/common';
 import {ELEMENT_PROBE_PROVIDERS} from '@angular/platform-browser';
 import {bootstrap} from '@angular/platform-browser-dynamic';
-import {ROUTER_PROVIDERS} from '@angular/router-deprecated';
+import {ROUTER_PROVIDERS} from '@angular/router';
 import {Http,HTTP_PROVIDERS} from '@angular/http';
 import { AuthConfig, AuthHttp } from 'angular2-jwt';
 
@@ -38,6 +38,8 @@ document.addEventListener('DOMContentLoaded', function main() {
         }), http);
       },
       deps: [Http]
-    })  ])
+    }),
+      provide(APP_BASE_HREF, {useValue : '/' })
+  ])
   .catch(err => console.error(err));
 });
