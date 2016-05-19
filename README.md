@@ -1,4 +1,4 @@
-# A  basic Angular2 latest release RC1 ("2.0.0-rc.1") project with authentication (login / logout) works as seed project
+# A  basic Angular2 latest release RC1 ("2.0.0-rc.1") project with authentication (login / logout) works as seed project with new Route
 
 ## Module Covered:
 
