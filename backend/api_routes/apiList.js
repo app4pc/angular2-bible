@@ -5,20 +5,12 @@ var createToken=function (user) {
 module.exports ={
     "get":[
 		{
-				"url":['/', '/login', '/dashboard'],
+				"url":['/', '/login', '/dashboard','/admin/*'],
 				"callback":function(req, res, next){
 					console.log("__dirname",__dirname);
 					res.sendFile(path.join(__dirname,'/../../dist/index.html'));
 				}
-		},
-
-        {
-            "url":"/",
-            "callback":function(req, res, next){
-                console.log("__dirname",__dirname);
-                res.sendFile(path.join(__dirname,'/../../dist/index.html'));
-            }
-        }
+		}
     ],
     "post":[
       {
@@ -28,6 +20,7 @@ module.exports ={
             'X-Auth-Token':"data.token",
             'username':"data.result.username",
             'user_type':"data.result['user_type']",
+            'user_role':"data.result['user_role']",
             'name':" data.result.name",
             'email':" data.result.email",
             'clientname':" data.result.clientname",
