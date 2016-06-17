@@ -1,8 +1,8 @@
-# A  basic Angular2 latest release RC1 ("2.0.0-rc.2") project with authentication (login / logout) works as seed project with new Route
+# A  basic Angular2 latest release RC2 ("2.0.0-rc.2") project with authentication (login / logout) works as seed project with new Route
 
 ## Module Covered:
 
-* RC1 ("2.0.0-rc.2") new Route implementation with child routes
+* RC2 ("2.0.0-rc.2") new Route implementation with child routes
 
 
 ## This project setup uses following tech-set:
@@ -10,7 +10,7 @@
 * Webpack: for transpylation and as a task runner
 * TSD & TSC to write code in ECMAScript-6 standards.
 * TS-Lint for de-bugging,code-optimisation and standardisation.
-* Angular 2 with latest release RC1 ("2.0.0-rc.2")
+* Angular 2 with latest release RC2 ("2.0.0-rc.2")
 * jQuery typescript for some functionality
 * Crypto-js for encryption/decryption
 
