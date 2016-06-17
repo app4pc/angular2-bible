@@ -1,7 +1,7 @@
 {
   "name": "angular2-latest-basic-seed",
   "version": "0.0.0",
-  "description": "A basic Angular2 latest release RC1 (2.0.0-rc.1) project with authentication (login / logout) works as seed project",
+  "description": "A basic Angular2 latest release RC1 (2.0.0-rc.2) project with authentication (login / logout) works as seed project",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -9,7 +9,7 @@
   },
   "author": "Akhilesh Kumar <akhileshcoder@gmail.com>",
   "keywords": [
-    "jwt","auth0","Angular2","authentication","login","logout","basic","seed","2.0.0-rc.1"
+    "jwt","auth0","Angular2","authentication","login","logout","basic","seed","2.0.0-rc.2"
   ],
   "scripts": {
     "clean": "rimraf node_modules doc dist && npm cache clean",
@@ -31,14 +31,14 @@
     "postinstall": "npm run webdriver-update && typings install"
   },
   "dependencies": {
-    "@angular/common": "^2.0.0-rc.1",
-    "@angular/compiler": "^2.0.0-rc.1",
-    "@angular/core": "^2.0.0-rc.1",
-    "@angular/http": "^2.0.0-rc.1",
-    "@angular/platform-browser": "^2.0.0-rc.1",
-    "@angular/platform-browser-dynamic": "^2.0.0-rc.1",
-    "@angular/platform-server": "^2.0.0-rc.1",
-    "@angular/router": "^2.0.0-rc.1",
+    "@angular/common": "^2.0.0-rc.2",
+    "@angular/compiler": "^2.0.0-rc.2",
+    "@angular/core": "^2.0.0-rc.2",
+    "@angular/http": "^2.0.0-rc.2",
+    "@angular/platform-browser": "^2.0.0-rc.2",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.2",
+    "@angular/platform-server": "^2.0.0-rc.2",
+    "@angular/router": "^2.0.0-rc.2",
     "angular2-jwt": "0.1.15",
     "es6-promise": "^3.2.1",
     "es6-shim": "^0.35.0",
