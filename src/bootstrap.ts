@@ -1,18 +1,12 @@
 import {enableProdMode, provide} from "@angular/core";
 import { FORM_PROVIDERS ,APP_BASE_HREF} from '@angular/common';
-import {ELEMENT_PROBE_PROVIDERS} from '@angular/platform-browser';
 import {bootstrap} from '@angular/platform-browser-dynamic';
 import {ROUTER_PROVIDERS} from '@angular/router';
 import {Http,HTTP_PROVIDERS} from '@angular/http';
 import { AuthConfig, AuthHttp } from 'angular2-jwt';
 
 const ENV_PROVIDERS = [];
-// depending on the env mode, enable prod mode or add debugging modules
-if (process.env.ENV === 'build') {
-  enableProdMode();
-} else {
-  ENV_PROVIDERS.push(ELEMENT_PROBE_PROVIDERS);
-}
+
 enableProdMode();
 /*
  * App Component
