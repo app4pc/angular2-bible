@@ -1,7 +1,7 @@
 {
   "name": "angular2-latest-basic-seed",
   "version": "0.1.0",
-  "description": "A basic Angular2 latest release RC2 (2.0.0-rc.4) project with authentication (login / logout) works as seed project",
+  "description": "A basic Angular2 latest release RC4 (2.0.0-rc.4) project with authentication (login / logout) works as seed project",
   "license": "MIT",
   "repository": {
     "type": "git",
