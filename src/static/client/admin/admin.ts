@@ -4,8 +4,7 @@ import { Http, Headers} from '@angular/http';
 import { AuthHttp } from 'angular2-jwt';
 import { Router, ROUTER_DIRECTIVES ,Routes} from '@angular/router';
 
-import {AddUsrCat} from './addUsrCat/addUsrCat';
-import {AllUsr} from './allUsr/allUsr';
+
 declare var jQuery:JQueryStatic;
 declare var decreptIt:any;
 let template = require('./admin.html');
@@ -15,11 +14,6 @@ let template = require('./admin.html');
   directives: [CORE_DIRECTIVES, ROUTER_DIRECTIVES],
   template: template
 })
-@Routes([
-  {path: '/addUsrCat', component: AddUsrCat},
-  {path: '/allUsr', component: AllUsr},
-  {path: '*', component: AddUsrCat},
-])
 
 export class Admin implements AfterViewInit {
   isLogedIn:Boolean=localStorage.getItem('jwt');

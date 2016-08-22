@@ -1,9 +1,6 @@
 import {Component,OnInit,AfterViewInit} from '@angular/core';
 import {Router,Routes,ROUTER_DIRECTIVES} from '@angular/router';
 
-import {Login} from '../login/login';
-import {Dashboard} from '../dashboard/dashboard';
-import {Admin} from '../admin/admin';
 declare var encrptIt:any;
 let template = require('./app.html');
 
@@ -13,12 +10,6 @@ let template = require('./app.html');
   directives: [ROUTER_DIRECTIVES],
 })
 
-@Routes([
-  {path: '/login', component: Login},
-  {path: '/dashboard', component: Dashboard},
-  {path: '/admin', component: Admin }
-])
-
 export class App implements AfterViewInit,OnInit{
   lstItem:Array<any>;
   isLogedIn:Boolean=localStorage.getItem('jwt');
@@ -26,15 +17,15 @@ export class App implements AfterViewInit,OnInit{
   idleHandler:any;
   constructor(public router: Router) {
     this.publicRoutes = {
-      '/login': true
+      'login': true
     };
-    this.lstItem=[["Login","fa-home","/login"],
-      ["Add User Cat","fa-circle-o","/admin/addUsrCat"],
-      ["All User","fa-music","/admin/allUsr"],
-      ["Menu 3","fa-phone","/login"],
-      ["Menu 4","fa-music","/login"],
-      ["Settings","fa-gear fa-spin","/login"],
-      ["App4pc Toutorial","fa-phone","/login"]
+    this.lstItem=[["Login","fa-home","login"],
+      ["Add User Cat","fa-circle-o","admin/addUsrCat"],
+      ["All User","fa-music","admin/allUsr"],
+      ["Menu 3","fa-phone","login"],
+      ["Menu 4","fa-music","login"],
+      ["Settings","fa-gear fa-spin","login"],
+      ["App4pc Toutorial","fa-phone","login"]
     ];
   }
   ngOnInit() {
@@ -54,7 +45,7 @@ export class App implements AfterViewInit,OnInit{
         localStorage.setItem('idleTime',""+(idlT+5))
       }
     },5000);
-    this.router.navigate(['/dashboard']);
+    this.router.navigate(['dashboard']);
   }
   logout() {
     clearInterval(this.idleHandler);
